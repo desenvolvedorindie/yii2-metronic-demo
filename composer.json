@@ -1,16 +1,13 @@
 {
-    "name": "yiisoft/yii2-app-basic",
-    "description": "Yii 2 Basic Project Template",
-    "keywords": ["yii2", "framework", "basic", "project template"],
+    "name": "yiisoft/yii2-metronic-demo",
+    "description": "Yii 2 Metronic Project Demo",
+    "keywords": ["yii2", "framework", "demo"],
     "homepage": "http://www.yiiframework.com/",
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
-        "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
-        "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2"
+        "issues": "https://github.com/wfcreations/yii2-metronic-demo/issues?state=open",
+        "source": "https://github.com/wfcreations/yii2-metronic-demo"
     },
     "minimum-stability": "dev",
     "require": {
