@@ -195,9 +195,14 @@ JquerySlimscrollAsset::register($this);
                         'label' => 'Home',
                         'url' => ['/'],
                         'icon' => 'icon-home',
+                    ],
+                    [
+                        'label' => 'Components',
+                        'url' => ['/site/components'],
+                        'icon' => 'icon-puzzle',
                         'badge' => [
                             'label' => '1',
-                            'type' => wfcreations\metronic\widgets\Badge::TYPE_DANGER,
+                            'type' => wfcreations\metronic\widgets\Badge::TYPE_INFO,
                         ],
                     ],
                     [

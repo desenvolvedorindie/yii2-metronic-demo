@@ -10,6 +10,7 @@ use app\models\LoginForm;
 use app\models\ContactForm;
 
 class SiteController extends Controller {
+
     public $layout = 'admin4/main';
 
     public function behaviors() {
@@ -50,6 +51,10 @@ class SiteController extends Controller {
         return $this->render('index');
     }
 
+    public function actionComponents() {
+        return $this->render('components');
+    }
+
     public function actionLogin() {
         $this->layout = 'admin4/login1';
         if (!\Yii::$app->user->isGuest) {
@@ -60,9 +65,7 @@ class SiteController extends Controller {
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
         }
-        return $this->render('login', [
-                    'model' => $model,
-        ]);
+        return $this->render('login', ['model' => $model]);
     }
 
     public function actionLogout() {
@@ -76,9 +79,7 @@ class SiteController extends Controller {
             Yii::$app->session->setFlash('contactFormSubmitted');
             return $this->refresh();
         }
-        return $this->render('contact', [
-                    'model' => $model,
-        ]);
+        return $this->render('contact', ['model' => $model]);
     }
 
     public function actionAbout() {
