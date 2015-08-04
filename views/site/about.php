@@ -12,8 +12,12 @@ $this->title = 'About';
     </div>
 </div>
 
-<p>
-    This is the About page. You may modify the following file to customize its content:
-</p>
+<div class="row">
+    <div class="col-md-12">
+        <p>
+            This is the About page. You may modify the following file to customize its content:
+        </p>
+    </div>
+</div>
 
 <code><?= __FILE__ ?></code>

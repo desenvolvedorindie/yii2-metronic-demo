@@ -8,11 +8,11 @@ use wfcreations\metronic\bundles\pages\styles\TasksAsset;
 use wfcreations\simplelineicons\AssetBundle;
 use wfcreations\metronic\bundles\globalassets\JquerySlimscrollAsset;
 
-AppAsset::register($this);
 $adminTheme4Asset = AdminTheme4Asset::register($this);
-TasksAsset::register($this);
 AssetBundle::register($this);
+TasksAsset::register($this);
 JquerySlimscrollAsset::register($this);
+AppAsset::register($this);
 ?>
 
 <?php $this->beginPage() ?>
@@ -164,9 +164,9 @@ JquerySlimscrollAsset::register($this);
                             <li class="dropdown dropdown-user dropdown-dark">
                                 <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                                     <span class="username username-hide-on-mobile">
-                                        Nick </span>
+                                        Welsiton </span>
                                     <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
-                                    <img alt="" class="img-circle" src="<?= $adminTheme4Asset->baseUrl ?>/img/avatar9.jpg"/>
+                                    <img alt="" class="img-circle" src="http://graph.facebook.com/614582035318552/picture?width=39&height=39"/>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-default">
                                     <li>
