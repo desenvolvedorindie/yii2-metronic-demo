@@ -15,7 +15,9 @@
         "yiisoft/yii2": ">=2.0.4",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
-        "wfcreations/yii2-metronic": "dev-master"
+        "wfcreations/yii2-metronic": "dev-master",
+        "kartik-v/yii2-widget-typeahead": "dev-master",
+        "2amigos/yii2-date-picker-widget": "^1.0@dev"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

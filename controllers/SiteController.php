@@ -8,6 +8,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\ComponentsForm;
 
 class SiteController extends Controller {
 
@@ -52,7 +53,8 @@ class SiteController extends Controller {
     }
 
     public function actionComponents() {
-        return $this->render('components');
+        $model = new ComponentsForm();
+        return $this->render('components', ['model' => $model]);
     }
 
     public function actionLogin() {
