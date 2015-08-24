@@ -6,12 +6,10 @@ use yii\helpers\Url;
 use wfcreations\metronic\bundles\AdminTheme4Asset;
 use wfcreations\metronic\bundles\pages\styles\TasksAsset;
 use wfcreations\simplelineicons\AssetBundle;
-use wfcreations\metronic\bundles\globalassets\JquerySlimscrollAsset;
 
 $adminTheme4Asset = AdminTheme4Asset::register($this);
 AssetBundle::register($this);
 TasksAsset::register($this);
-JquerySlimscrollAsset::register($this);
 AppAsset::register($this);
 ?>
 
@@ -289,13 +287,6 @@ AppAsset::register($this);
         ])
         ?>
         <?php $this->endBody() ?>
-        <script>
-            jQuery(document).ready(function () {
-                Metronic.init(); // init metronic core componets
-                Layout.init(); // init layout
-                QuickSidebar.init(); // init quick sidebar
-            });
-        </script>
     </body>
 </html>
 <?php $this->endPage() ?>
